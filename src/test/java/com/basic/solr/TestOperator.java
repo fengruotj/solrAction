@@ -81,7 +81,7 @@ public class TestOperator {
         solr = new HttpSolrClient.Builder(SOLR_URL).withConnectionTimeout(10000).withSocketTimeout(60000).build();
 
         //deleteByQuery形式删除
-        solr.deleteByQuery("id:1001 id:1002");
+        solr.deleteByQuery("id:1001 id:1002 id:1 id:2 id:3 id:4");
         solr.commit();
     }
 }
